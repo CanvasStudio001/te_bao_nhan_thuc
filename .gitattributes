@@ -1,0 +1,20 @@
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Pp]ackages/
+
+# Uncomment this line if you have multiple Unity projects sharing the same workspace.
+# /[Aa]ssets/AssetStoreTools*
+
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets/**/*.meta
+
+# Uncomment this line if you have git dependencies
+# /Assets/Plugins/GitHub/*
+
+# Uncomment this line if you have dependencies stored in the Unity package cache
+# /Library/PackageCache/
+
+# Envs
+.env
+
+Library/PackageCache/com.unity.burst@1.8.15/.Runtime/* filter=lfs diff=lfs merge=lfs -text
