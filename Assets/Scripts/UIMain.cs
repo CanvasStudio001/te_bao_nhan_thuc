@@ -225,6 +225,7 @@ public class UIMain : MonoBehaviour
         btnSwithModelTV.onClick.AddListener(OnSwithModelTVClicked);
         TurnOnUIViewDefault();
         StartCoroutine(DelayShow());
+        swipeDV.SetActive(false);
     }
     IEnumerator DelayShow()
     {
@@ -354,6 +355,7 @@ public class UIMain : MonoBehaviour
     float time = 0.00000000000000000000000000000000000000001f;
     IEnumerator CountToShow()
     {
+        int index = 0;
         controller.lsButtons[0].gameObject.SetActive(false);
         for (int i = 1; i < 10; i++)
         {
@@ -362,10 +364,11 @@ public class UIMain : MonoBehaviour
                 button.gameObject.SetActive(false);
             }
             yield return new WaitForSeconds(time);
-            foreach (var button in controller.lsButtons)
+            for (int j = 1; j < controller.lsButtons.Count; j++)
             {
-                button.gameObject.SetActive(true);
+                controller.lsButtons[j].gameObject.SetActive(true);
             }
+
             yield return new WaitForSeconds(time);
         }
 
@@ -1200,6 +1203,7 @@ public class UIMain : MonoBehaviour
 
 
     }
+    private bool isFirstTimeSwitchModel = true;
     public void OnSwithModelDVClicked()
     {
         _objDescriptionDV.gameObject.SetActive(true);
@@ -1231,6 +1235,11 @@ public class UIMain : MonoBehaviour
         }
 
         OnButtonClicked(CurrentButtonSelected, true);
+        if (isFirstTimeSwitchModel)
+        {
+            isFirstTimeSwitchModel = false;
+            _testScroll.Next();
+        }
         //OnButtonReset(false);
 
     }

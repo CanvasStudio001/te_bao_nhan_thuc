@@ -35,8 +35,14 @@ public class CheckMouseClicked : MonoBehaviour
 
     public void OnDrag(PointerEventData eventData)
     {
-        _uiMain.IsClickSwipe = true;
-        // Debug.Log("Dragging on dropdown panel.");
+        if (_uiMain.IsTouchingOrZooming())
+        {
+            _uiMain.IsClickSwipe = false;
+        }
+        else
+        {
+            _uiMain.IsClickSwipe = true;
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
