@@ -9,7 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-/[Pp]ackages/
+#/[Pp]ackages/
 # Uncomment this line if you have multiple Unity projects sharing the same workspace.
 #!/[Aa]ssets/AssetStoreTools*
 
@@ -32,5 +32,5 @@
 [Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
-[Pp]ackages/
+#[Pp]ackages/
 .vs/
