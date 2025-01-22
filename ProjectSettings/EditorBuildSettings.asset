@@ -8,10 +8,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Scenes/UTKTemplate_MaterialDemo.unity
     guid: e8e8e396a997caa4bab08715b9158022
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scenes/Ciment.unity
     guid: 9f394428ded474e7fb7f266a70a98a4c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Scenes/te_bao_nhan_thuc.unity
     guid: 6f98356be726e7d4985ac710c0b8042a
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

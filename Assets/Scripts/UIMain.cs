@@ -74,6 +74,9 @@ public class UIMain : MonoBehaviour
     private List<GameObject> lsDescriptions = new List<GameObject>();
     [HideInInspector]
     public List<string> lsNameButton = new List<string>();
+    public GameObject NhanDV1;
+    public GameObject NhanDV2;
+    public GameObject NhanDV3;
 
     [Header("Setting")]
 
@@ -220,6 +223,9 @@ public class UIMain : MonoBehaviour
         btnZoomIn.onClick.AddListener(OnDeActiveBGPanel);
         btnViewManNhan.onClick.AddListener(OnViewManNhanTVClicked);
         btnViewManNhan1.onClick.AddListener(OnViewManNhanDVClicked);
+        NhanDV1.gameObject.SetActive(false);
+        NhanDV2.gameObject.SetActive(false);
+        NhanDV3.gameObject.SetActive(false);
 
         btnSwithModelDV.onClick.AddListener(OnSwithModelDVClicked);
         btnSwithModelTV.onClick.AddListener(OnSwithModelTVClicked);
@@ -243,6 +249,9 @@ public class UIMain : MonoBehaviour
         {
             item.gameObject.SetActive(false);
         }
+        NhanDV1.gameObject.SetActive(false);
+        NhanDV2.gameObject.SetActive(false);
+        NhanDV3.gameObject.SetActive(false);
         lsDescriptions[1].SetActive(true);
         lsDescriptions[0].SetActive(false);
     }
@@ -397,6 +406,9 @@ public class UIMain : MonoBehaviour
         {
             item.gameObject.SetActive(false);
         }
+        NhanDV1.gameObject.SetActive(false);
+        NhanDV2.gameObject.SetActive(false);
+        NhanDV3.gameObject.SetActive(false);
         for (int i = 1; i < controller.lsButtons.Count; i++)
         {
             controller.lsButtons[i].gameObject.SetActive(true);
@@ -719,6 +731,9 @@ public class UIMain : MonoBehaviour
             }
 
         }
+        NhanDV1.gameObject.SetActive(false);
+        NhanDV2.gameObject.SetActive(false);
+        NhanDV3.gameObject.SetActive(false);
         // ImgNextButton.enabled = isUIOn;
         // ImgPreviousButton.enabled = isUIOn;
         // _imgSwipe.enabled = isUIOn;
@@ -1186,17 +1201,29 @@ public class UIMain : MonoBehaviour
         {
             controller.lsButtons[i].gameObject.SetActive(false);
         }
-        for (int i = 0; i < lsViewTagManNhan.Count; i++)
+        if (NhanDV1.activeSelf)
         {
-            if (i < 3)
-            {
-                lsViewTagManNhan[i].gameObject.SetActive(false);
-
-            }
-            else
-            {
-                lsViewTagManNhan[i].gameObject.SetActive(true);
-            }
+            NhanDV1.gameObject.SetActive(false);
+        }
+        else
+        {
+            NhanDV1.gameObject.SetActive(true);
+        }
+        if (NhanDV2.activeSelf)
+        {
+            NhanDV2.gameObject.SetActive(false);
+        }
+        else
+        {
+            NhanDV2.gameObject.SetActive(true);
+        }
+        if (NhanDV3.activeSelf)
+        {
+            NhanDV3.gameObject.SetActive(false);
+        }
+        else
+        {
+            NhanDV3.gameObject.SetActive(true);
         }
         lsDescriptions[1].SetActive(false);
         lsDescriptions[0].SetActive(true);

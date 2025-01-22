@@ -1,0 +1,113 @@
+using System.Collections.Generic;
+
+[System.Serializable]
+public class MatchModel
+{
+    public MatchData match;
+}
+[System.Serializable]
+public class MatchData
+{
+    public List<string> Lesson1;
+    public List<string> Lesson2;
+    public List<string> Lesson3;
+    public List<string> Lesson4;
+    public List<string> Lesson5;
+    public List<string> Lesson6;
+    public List<string> Lesson7;
+    public List<string> Lesson8;
+    public List<string> Lesson9;
+    public List<string> Lesson10;
+    public List<string> Lesson11;
+    public List<string> Lesson12;
+    public List<string> Lesson13;
+    public List<string> Lesson14;
+    public List<string> Lesson15;
+    public List<string> Lesson16;
+    public List<string> Lesson17;
+    public List<string> Lesson18;
+    public List<string> Lesson19;
+    public List<string> Lesson20;
+    public List<string> Lesson21;
+    public List<string> Lesson22;
+    public List<string> Lesson23;
+    public List<string> Lesson24;
+    public List<string> Lesson25;
+    public List<string> Lesson26;
+    public List<string> Lesson27;
+    public List<string> Lesson28;
+    public List<string> Lesson29;
+    public List<string> Lesson30;
+    public List<string> Lesson31;
+    public List<string> Lesson32;
+    public List<string> Lesson33;
+    public List<string> Lesson34;
+    public List<string> Lesson35;
+    public List<string> Lesson36;
+    public List<string> Lesson37;
+    public List<string> Lesson38;
+    public List<string> Lesson39;
+    public List<string> Lesson40;
+    public List<string> Lesson41;
+    public List<string> Lesson42;
+    public List<string> Lesson43;
+    public List<string> Lesson44;
+    public List<string> Lesson45;
+    public List<string> Lesson46;
+    public List<string> Lesson47;
+    public List<string> Lesson48;
+    public List<string> Lesson49;
+    public List<string> Lesson50;
+    public List<string> Lesson51;
+    public List<string> Lesson52;
+    public List<string> Lesson53;
+    public List<string> Lesson54;
+    public List<string> Lesson55;
+    public List<string> Lesson56;
+    public List<string> Lesson57;
+    public List<string> Lesson58;
+    public List<string> Lesson59;
+    public List<string> Lesson60;
+    public List<string> Lesson61;
+    public List<string> Lesson62;
+    public List<string> Lesson63;
+    public List<string> Lesson64;
+    public List<string> Lesson65;
+    public List<string> Lesson66;
+    public List<string> Lesson67;
+    public List<string> Lesson68;
+    public List<string> Lesson69;
+    public List<string> Lesson70;
+    public List<string> Lesson71;
+    public List<string> Lesson72;
+    public List<string> Lesson73;
+    public List<string> Lesson74;
+    public List<string> Lesson75;
+    public List<string> Lesson76;
+    public List<string> Lesson77;
+    public List<string> Lesson78;
+    public List<string> Lesson79;
+    public List<string> Lesson80;
+    public List<string> Lesson81;
+    public List<string> Lesson82;
+    public List<string> Lesson83;
+    public List<string> Lesson84;
+    public List<string> Lesson85;
+    public List<string> Lesson86;
+    public List<string> Lesson87;
+    public List<string> Lesson88;
+    public List<string> Lesson89;
+    public List<string> Lesson90;
+    public List<string> Lesson91;
+    public List<string> Lesson92;
+    public List<string> Lesson93;
+    public List<string> Lesson94;
+    public List<string> Lesson95;
+    public List<string> Lesson96;
+    public List<string> Lesson97;
+    public List<string> Lesson98;
+    public List<string> Lesson99;
+    public List<string> Lesson100;
+}
+
+
